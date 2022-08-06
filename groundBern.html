@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Links to Bootstrap's CSS style sheet, taken from the Bootstrap
+    website here: https://getbootstrap.com/docs/4.5/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Link to CSS  -->
+    <link rel = "stylesheet" type = "text/css" href = "CSS/koko.css">
+
+    <title>
+        Kokoro!
+    </title>
+
+</head>
+
+
+  <!-- Container -->
+  <div class = "container min-vh-100">
+
+    <!-- body start -->
+    <body>
+
+      <!-- Nav bar with buttons that sticks to  top of page -->
+      <div class = "stickyBar">
+
+        <!-- NON-interactive button -->
+        <div class = "navButton1">
+          <b> Go To: </b>
+        </div>
+
+        <!-- Button links to self -->
+        <div class = "navButtonA" onclick="window.location.href='index.html';">
+          <a href="index.html"> Home </a>
+        </div>
+
+        <!-- Button links to map page -->
+        <div class = "navButtonA" onclick="window.location.href='navToMap.html';">
+          <a href="navToMap.html"> Map </a>
+        </div>
+
+        <!-- Button links somewhere -->
+        <div class = "navButtonA" onclick="window.location.href='underConstruction.html';">
+          <a href="underConstruction.html"> Other </a>
+        </div>
+
+      </div>
+
+      <!-- New Jumbo -->
+      <div class = "jumbotron">
+          <div class = "MButton" onclick="window.location.href='mapGroundFloor.html';">
+              <a href="mapGroundFloor.html"> Ground Floor </a>
+          </div>
+          <div class = "MButton" onclick="window.location.href='underConstruction.html';">
+              <a href="underConstruction.html"> Lower Floor </a>
+          </div>
+      </div>
+
+      <div class = "jumbotron">
+          <h1> Alpine I <br> <br> </h1>
+              <figure>
+              <img src= "images/kokoGroundFloorBern.png" alt="Bern" class = "img-fluid">
+              <!-- Figcaption from W3Schools: https://www.w3schools.com/tags/tag_figcaption.asp-->
+              <figcaption>
+              <i> Map of ground floor </i>
+              </figcaption>
+              </figure>
+      </div>
+
+      <h1>  Bern Schedule  </h1>
+
+      <div class = "jumbotron">
+
+        <h6> Thursday </h6>
+        <br><br>
+          <div class = "table table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Time</th>
+                  <th scope="col">Event Name</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Host</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <th scope="row" class="bg-light"> 8:00 PM - 9:30 PM </th>
+                  <td class="bg-light"> OPEN </td>
+                  <td class="bg-light"> None yet </td>
+                  <td class="bg-light"> None yet </td>
+                </tr>
+
+                <tr>
+                  <th scope="row"> 10:00 PM - Midnight </th>
+                  <td> Belle [PG] Movie Time! </td>
+                  <td>
+                    A high school student becomes a globally beloved singer
+                    after entering a fantastic virtual world. She soon embarks
+                    on an emotional and epic quest to uncover the identity of
+                    a mysterious beast who's on the run from ruthless vigilantes.
+                  </td>
+                  <td> Con Staff </td>
+                </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+
+            <h6> Friday </h6>
+            <br><br>
+              <div class = "table table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Time</th>
+                      <th scope="col">Event Name</th>
+                      <th scope="col">Description</th>
+                      <th scope="col">Host</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr>
+                      <th scope="row"> 2:00 PM - 2:50 PM </th>
+                      <td> TWST Mania </td>
+                      <td> Dive into the twisted world of Twisted
+                      Wonderland with MerryMeri. We'll discuss the
+                      game as a whole, the characters, plot points,
+                      theories, and of course, our favorite ships! </td>
+                      <td> MerryMeri </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row"> 3:00 PM - 3:50 PM </th>
+                      <td> Genshin Character Panel! </td>
+                      <td> Come ask some of Genshin's characters some
+                      questions or get to talk to them! Everyone is
+                      welcome! </td>
+                      <td> Theron </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row"> 4:00 PM - 4:50 PM </th>
+                      <td> Costume Armor, From Foam to Finish! </td>
+                      <td> Come hang out with me while I go over how
+                        I built a Monster Hunter cosplay, from patterning
+                        tips & tricks, to painting and even how to install
+                        basic LEDs! </td>
+                      <td> Forging S'mores </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row"> 5:00 PM - 6:20 PM </th>
+                      <td> We are the Crystal Gems! </td>
+                      <td> A Steven Universe Singalong and Q&A panel.
+                        Join the Crystal Gems and sing along to some of
+                        our favorite songs from the show! </td>
+                      <td> Sailorstarmony </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row"> 6:30 PM - 7:50 PM </th>
+                      <td> Adventure Group Sing-a-long! </td>
+                      <td> Join the Adventure Group as we pay tribute
+                        to fun, popular (and meme-worthy) songs of
+                        old and sing them together karaoke-style.
+                        Come sing your heart out in a judgment-free
+                        zone and let's have fun together! </td>
+                      <td> The Adventure Group </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row"> 8:00 PM - 8:50 PM </th>
+                      <td> Otaku Millionaire Hot Seat: InuYasha Edition (Megacash Qualifier)</td>
+                      <td> The Hot Seat is coming to the St. Louis Area.
+                        Six Players will play in the game for 12 Questions,
+                        but only one player can win up to ¥1,000,000 in a
+                        prize package and a spot in the Grand Final at the
+                        end of Season 4. </td>
+                      <td> Golden Belt Otaku, LLC </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row" class="bg-danger"> 9:00 PM - 10:50 PM </th>
+                      <td class="bg-danger"> Super Fight! (18+) </td>
+                      <td class="bg-danger"> Have you ever been concerned
+                        about literal trash pandas wielding nuclear weapons
+                        and an infinite army of four-year-olds? We understand
+                        and invite you to do something about it in this
+                        unusual war of words.  Use the legendary scream-o-meter
+                        to tell us who you think gets the fairy sprinkled
+                        ninja baked ice cream. </td>
+                      <td class="bg-danger"> Josh Barnes </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row" class="bg-danger"> 11:00 PM - 11:50 PM </th>
+                      <td class="bg-danger"> YouTube Poops with The Adventure Group (18+) </td>
+                      <td class="bg-danger"> "Do you enjoy YouTube Poops? Do
+                        you like awkwardly edited videos (mostly) from the
+                        early 2000s? Got nothing better to do late at night
+                        at an anime convention? Then this is the panel for you.
+                        Come on by and discuss with us what YouTube Poops are
+                        and why they’re such an underground phenomena, and then
+                        watch some of our favorite nerdy ones! Bonus points if
+                        you come with some actual good ones we
+                        haven’t seen yet! </td>
+                      <td class="bg-danger"> The Adventure Group </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row" class="bg-light"> 12:00 AM - 12:50 AM </th>
+                      <td class="bg-light"> OPEN </td>
+                      <td class="bg-light"> None yet </td>
+                      <td class="bg-light"> None yet </td>
+                    </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+
+            <h6> Saturday </h6>
+            <br><br>
+              <div class = "table table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Time</th>
+                      <th scope="col">Event Name</th>
+                      <th scope="col">Description</th>
+                      <th scope="col">Host</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr>
+                      <th scope="row"> 10:00 AM - 10:50 AM </th>
+                      <td> You Can (Not) Get Something For Nothing </td>
+                      <td> Meaningful creative work is not
+                        possible to undertake without its ingredients. Time.
+                        Creative Capital. Skills. Example: Fullmetal Alchemist
+                        took nine years to tell its story, and a whole lot
+                        of homework. We'll check out examples of great work
+                        and frame out what your project needs to grow.</td>
+                      <td> Toonstop </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row"> 10:00 AM - 10:50 AM </th>
+                      <td> You Can (Not) Get Something For Nothing </td>
+                      <td> Meaningful creative work is not
+                        possible to undertake without its ingredients. Time.
+                        Creative Capital. Skills. Example: Fullmetal Alchemist
+                        took nine years to tell its story, and a whole lot
+                        of homework. We'll check out examples of great work
+                        and frame out what your project needs to grow.</td>
+                      <td> Toonstop </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row"> 10:00 AM - 10:50 AM </th>
+                      <td> You Can (Not) Get Something For Nothing </td>
+                      <td> Meaningful creative work is not
+                        possible to undertake without its ingredients. Time.
+                        Creative Capital. Skills. Example: Fullmetal Alchemist
+                        took nine years to tell its story, and a whole lot
+                        of homework. We'll check out examples of great work
+                        and frame out what your project needs to grow.</td>
+                      <td> Toonstop </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row" class="bg-danger"> 10:30 PM - 11:50 PM </th>
+                      <td class="bg-danger"> Anime Mixology (21+) </td>
+                      <td class="bg-danger"> MerryMeri invites you to join
+                        her for a crash-course in the fine art of bartending...
+                        with an otaku flare, of course. Learn the basics of
+                        cocktail creation and also share your best "that time
+                        I got drunk story. The more wild and embarrassing,
+                        the better! (Note: No actual alcohol will be handled
+                        or distributed during this panel.) </td>
+                      <td class="bg-danger"> MerryMeri </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row" class="bg-light"> 12:00 AM - 1:00 AM </th>
+                      <td class="bg-light"> OPEN </td>
+                      <td class="bg-light"> None yet </td>
+                      <td class="bg-light"> None yet </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            
+                <h6> Sunday </h6>
+                <br><br>
+                  <div class = "table table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col">Time</th>
+                          <th scope="col">Event Name</th>
+                          <th scope="col">Description</th>
+                          <th scope="col">Host</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr>
+                          <th scope="row" class="bg-warning"> 10:00 AM - 10:50 AM </th>
+                          <td class="bg-warning"> Family Feud Team Event </td>
+                          <td class="bg-warning"> 5 members from both team Dawn
+                            and team Dusk will come up to the table commencing
+                            the Family feud. Working with your teammates you
+                            will attempt to answer the questions on the board,
+                            but be careful! Three strikes and the opposing
+                            team can come in and swipe all the points you
+                            worked so hard to gain. </td>
+                          <td class="bg-warning"> Con Staff </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row"> 11:00 AM - 11:50 AM </th>
+                          <td> Cosplay Contest Tips and Tricks </td>
+                          <td> Competing in the Cosplay Community can
+                            be tricky, intimidating, and overwhelming!
+                            Come get answers to all your questions about
+                            competing from award winning cosplayers, Forging
+                            S'mores and aTorableCosplay! </td>
+                          <td> Forging S'mores and aTorable Cosplay </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row"> 12:00 PM - 12:50 PM </th>
+                          <td> How To Be A Successful Artist (By Figuring Out
+                            What That Means) </td>
+                          <td> You will get lost if you go on a trip with no
+                            destination. Come learn how to focus your effort
+                            and increase your gratification with your creative
+                            pursuits by figuring out what you're actually
+                            trying to do. </td>
+                          <td> Toonstop </td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row"> 1:00 PM - 2:20 PM </th>
+                          <td> Tomino Before Gundam </td>
+                          <td> Yoshiyuki Tomino is one of the most
+                            significant figures in the history of anime.
+                            The creator of Mobile Suit Gundam and the
+                            Real Robot genre, he would also create on of
+                            the earliest Isekai series with Aura Battler
+                            Dunbine, and continues to work in the industry
+                            to this day with recent titles like the
+                            Gundam: Reconguista in G films. But, Tomino
+                            didn't simply dive into the industry with
+                            Gundam. With humble roots at Mushi Productions
+                            working on Astro Boy, even after finally earning
+                            the role of Chief Director on Triton of the Sea,
+                            it was a rocky road of successes and failures,
+                            bold steps forward and failed experiments, that
+                            would lead Tomino to the creation of his most
+                            enduring work, Mobile Suit Gundam. </td>
+                          <td> Ethan Halker </td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+              </div>
+
+      <!-- Body end -->
+      </body>
+
+      <!-- Container for footer -->
+      <div class = "container">
+        <!-- Footer -->
+        <footer>
+          <div class = "row">
+            <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h6> <i> Kokoro Schedule and Map Demo </i> </h6>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+    </div>
+
+</html>
