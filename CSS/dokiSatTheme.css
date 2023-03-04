@@ -1,0 +1,401 @@
+/*
+Theme for Doki (CSS); subject to change.
+
+Colors (OLD):
+container background color: #F6C8D4 (pastel pink)
+text color/ accent color:
+hover color:
+accent color 2 (navbar separator) :
+background color: #28194D (really dark purple)
+stickybar background: #F6C8D4 (pastel pink)
+stickybar texxt color: #28194D (dark purple)
+
+https://colors-picker.com/hex-color-picker/
+
+For personal reference: potential Doki colors. Taken from Doki mascot page.
+Left to right.
+
+TEALS
+#3AFCD1
+  #B3E5DA
+  #79D2BF
+  #40BFA3
+  #2D8672
+  #194D41
+
+PURPLES
+#A96CE1
+  #CDB3E5
+  #A879D2
+  #8240BF
+  #5B2D86
+  #34194D
+
+PINKS
+#E477B8
+  #E5B3D1
+  #D279AE
+  #BF408C
+  #862D62
+  #4D1938
+
+BLUES
+#4A52C2
+  #B3B6E5
+  #797FD2
+  #4048BF
+  #2D3386
+  #191D4D
+
+font-family: "Audiowide", sans-serif;
+*/
+
+/*
+Whatever is here sets properties for everything in the body; unless
+overwritten.
+BG color, font, height.
+Made a wacky color to more easily see boundaries; FIX LATER.
+
+For background: consider a theme relevant seamless repeating image?
+*/
+body {
+  background-color: #000000;
+  font-family: "Audiowide", sans-serif;
+  height: 100%;
+}
+
+/*
+Container; sots inside body, holds jumbos.
+For information / reference on container class,
+go here: https://www.w3schools.com/w3css/w3css_containers.asp
+*/
+.container {
+  background-color: #4D1938;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  padding-top: 0%;
+  padding-bottom: 5%;
+  padding-left: 0%;
+  padding-right: 0%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+Jumbotron- ALWAYS use WITHIN container!! Makes text bigger
+and puts it in a box. Background color and text color specified.
+Bootstrap component.
+Reference: https://getbootstrap.com/docs/4.0/components/jumbotron/
+*/
+.jumbotron {
+  top: 5%;
+  left: 0%;
+  width: inherit;
+  height: 15%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  background-color: #4D1938;
+  color: #E5B3D1;
+}
+
+/*
+Holds interactive buttons at top of the page in a navigation bar.
+Reference: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+*/
+.stickyBar {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  width: inherit;
+  height: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  justify-content: center;
+  align-items: center;
+  background-color: #34194D;
+  color: #D279AE;
+  font-family: "Audiowide", sans-serif;
+  border-bottom: 8px double #CCCCCC;
+}
+
+/*
+NON-interactive button; 'title' button.
+Sits in sticky bar and reads, 'Go To:'.
+*/
+.navButton1 {
+  top: 10%;
+  width: 20%;
+  transition-duration: 0.5s;
+  display: inline-block;
+  background-color: #34194D;
+  border-radius: 0px;
+  border: 0px solid #FFFFFF;
+  color: #CDB3E5;
+  padding: 2% 2%;
+  text-align: center;
+  font-size: 120%;
+}
+
+/*
+Interactive sticky bar buttons (Home, map, other).
+Horizontal orientation.
+*/
+.navButtonA {
+  top: 10%;
+  width: 20%;
+  transition-duration: 0.5s;
+  display:inline-block;
+  background-color: #A879D2;
+  border-radius: 8px;
+  border: 1px solid #CDB3E5;
+  color: #34194D;
+  padding: 2% 2%;
+  text-align: center;
+  font-size: 100%;
+}
+
+/*
+Behavior for sticky bar buttons.
+*/
+.navButtonA:hover {
+  /*  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #D4C4FB; */
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+  background-color: #CDB3E5;
+  border: 1px solid #A879D2;
+}
+
+/*
+Main page buttons. 'Link' buttons. Interactive,
+but on main page and NOT part of sticky nav bar.
+Vertical orientation instead of horizontal.
+*/
+.LPButton {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  transition-duration: 0.5s;
+  display: block;
+  background-color: #191D4D;
+  border-radius: 8px;
+  border: 2px solid #B3E5DA;
+  color: #D279AE;
+  text-align: center;
+  font-size: 120%;
+}
+
+/*
+LPButton behavior on hover.
+*/
+.LPButton:hover {
+  /*  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #D4C4FB; */
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+  background-color: #5B2D86;
+}
+
+.LPButtonFri {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  transition-duration: 0.5s;
+  display: block;
+  background-color: #4D1938;
+  border-radius: 8px;
+  border: 2px solid #B3E5DA;
+  text-align: center;
+  font-size: 120%;
+}
+
+.LPButtonFri a
+{
+  color: #34194D;
+}
+
+.LPButtonFri:hover {
+  /*  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #D4C4FB; */
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+  background-color: #B3E5DA;
+  border-radius: 8px;
+  border: 2px solid #4D1938;
+}
+
+
+.FriButton {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
+  height: inherit;
+  transition-duration: 0.5s;
+
+  background-color: #40BFA3;
+  border-radius: 0px;
+  border: 2px solid #B3E5DA;
+
+
+  font-size: inherit;
+
+  float: left;
+
+}
+
+.FriButton a
+{
+  color: #34194D;
+}
+
+.FriButton:hover {
+  /*  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #D4C4FB; */
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.24), 0 10px 20px 0 rgba(0,0,0,0.19);
+  background-color: #B3E5DA;
+  border-radius: 0px;
+  border: 2px solid #40BFA3;
+  cursor: pointer;
+}
+
+/* .btn-group FriButton {
+  padding: 10px 24px; /* Some padding */
+  /* cursor: pointer; /* Pointer/hand icon */
+  /* float: left; /* Float the buttons side by side */
+/* cursor: not-allowed; }
+*/
+
+
+/* unvisited link */
+
+a:link {
+  color: #34194D;
+  text-decoration: none;
+}
+
+
+
+/*
+visited link
+*/
+
+a:visited {
+  color: #34194D;
+  text-decoration: none;
+}
+
+
+/*
+mouse over link
+*/
+
+a:hover {
+  color: #8240BF;
+  text-decoration: none;
+}
+
+
+/*
+selected link
+*/
+a:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+/*
+Header 1 formatting
+*/
+h1 {
+  font-family: "Audiowide", sans-serif;
+  color: #E5B3D1;
+  text-align: center;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+/*
+Header 1 formatting
+*/
+h3 {
+  font-weight: bold;
+}
+
+/*
+Header 1 formatting
+*/
+h5 {
+  font-weight: bold;
+  color: #E5B3D1;
+}
+
+/*
+Header 1 formatting
+*/
+h6 {
+  font-weight: bold;
+  font-family: "Audiowide", sans-serif;
+  color: #E5B3D1;
+  text-align: center;
+  font-size: 80%;
+}
+
+
+.tableFri {
+  font-family: "Courier", sans-serif;
+  color: #000000;
+  font-size: 100%;
+  font-weight: bold;
+  font-stretch: condensed;
+}
+
+/* table header */
+th {
+  background-color: #E5B3D1;
+  font-size: 140%;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+tr {
+  text-align: center;
+}
+
+/*
+table rows - even
+striped for readability.
+*/
+tr:nth-child(even) {
+  background-color:#862D62;
+}
+
+tr:nth-child(odd){
+  background-color:#BF408C;
+}
+
+/* table element */
+td {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 0%;
+  background-color: #4D1938;
+}
